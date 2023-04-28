@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="359dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/login_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/rec1" />
+
+    <EditText
+        android:id="@+id/login_edit_text"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:hint="Логин"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#4bbbca"
+        app:layout_constraintBottom_toBottomOf="@+id/login_pic"
+        app:layout_constraintEnd_toEndOf="@+id/login_pic"
+        app:layout_constraintStart_toStartOf="@+id/login_pic"
+        app:layout_constraintTop_toTopOf="@+id/login_pic" />
+
+    <ImageView
+        android:id="@+id/pass_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_pic"
+        app:srcCompat="@drawable/rec1" />
+
+    <EditText
+        android:id="@+id/pass_edit_text"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#4bbbca"
+        app:layout_constraintBottom_toBottomOf="@+id/pass_pic"
+        app:layout_constraintEnd_toEndOf="@+id/pass_pic"
+        app:layout_constraintStart_toStartOf="@+id/pass_pic"
+        app:layout_constraintTop_toTopOf="@+id/pass_pic" />
+
+    <ImageView
+        android:id="@+id/enter_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_pic"
+        app:srcCompat="@drawable/rec2" />
+
+    <ImageView
+        android:id="@+id/reg_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_pic"
+        app:srcCompat="@drawable/rec3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="или"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_pic" />
+
+    <TextView
+        android:id="@+id/enter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/enter_pic"
+        app:layout_constraintEnd_toEndOf="@+id/enter_pic"
+        app:layout_constraintStart_toStartOf="@+id/enter_pic"
+        app:layout_constraintTop_toTopOf="@+id/enter_pic" />
+
+    <TextView
+        android:id="@+id/reg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_pic"
+        app:layout_constraintEnd_toEndOf="@+id/reg_pic"
+        app:layout_constraintStart_toStartOf="@+id/reg_pic"
+        app:layout_constraintTop_toTopOf="@+id/reg_pic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
