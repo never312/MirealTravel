@@ -2,21 +2,19 @@ package com.example.mirealtravel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class EnterOrRegActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_enter_or_reg);
 
         //Обозначаем поля ввода логина и пароля и сохраняем в переменные (Позже исправить на бд)
         EditText loginEdit = (EditText) findViewById(R.id.login_edit_text);
@@ -40,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
         regPic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // направить на activity для регистрации
+                Intent linkToReg = new Intent(EnterOrRegActivity.this, RegActivity.class);
+                startActivity(linkToReg);
             }
         });
     }

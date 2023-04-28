@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MirealTravel</string>
+    <string-array name="cities">
+        <item>Москва</item>
+        <item>Санкт-Питербург</item>
+        <item>Калининград</item>
+        <item>Екатеринбург</item>
+        <item>Казань</item>
+    </string-array>
 </resources>
