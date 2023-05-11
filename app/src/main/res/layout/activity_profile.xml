@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_avatar" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/avatar" />
+
+    <ImageView
+        android:id="@+id/username_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/rec1" />
+
+    <ImageView
+        android:id="@+id/email_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_pic"
+        app:srcCompat="@drawable/rec1" />
+
+    <ImageView
+        android:id="@+id/pass_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_pic"
+        app:srcCompat="@drawable/rec1" />
+
+    <TextView
+        android:id="@+id/pass_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сменить пароль"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/open_sans"
+        app:layout_constraintBottom_toBottomOf="@+id/pass_edit_btn"
+        app:layout_constraintEnd_toEndOf="@+id/pass_edit_btn"
+        app:layout_constraintStart_toStartOf="@+id/pass_edit_btn"
+        app:layout_constraintTop_toTopOf="@+id/pass_edit_btn" />
+
+    <ImageView
+        android:id="@+id/exit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_edit_btn"
+        app:srcCompat="@drawable/exit_png" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Выход"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/exit_btn"
+        app:layout_constraintEnd_toEndOf="@+id/exit_btn"
+        app:layout_constraintStart_toStartOf="@+id/exit_btn"
+        app:layout_constraintTop_toTopOf="@+id/exit_btn" />
+
+    <TextView
+        android:id="@+id/login_from_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans"
+        app:layout_constraintBottom_toBottomOf="@+id/username_pic"
+        app:layout_constraintEnd_toEndOf="@+id/username_pic"
+        app:layout_constraintStart_toStartOf="@+id/username_pic"
+        app:layout_constraintTop_toTopOf="@+id/username_pic" />
+
+    <TextView
+        android:id="@+id/email_from_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/open_sans"
+        app:layout_constraintBottom_toBottomOf="@+id/email_pic"
+        app:layout_constraintEnd_toEndOf="@+id/email_pic"
+        app:layout_constraintStart_toStartOf="@+id/email_pic"
+        app:layout_constraintTop_toTopOf="@+id/email_pic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
