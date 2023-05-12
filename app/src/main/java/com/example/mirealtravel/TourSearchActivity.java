@@ -27,35 +27,35 @@ public class TourSearchActivity extends AppCompatActivity implements AdapterView
         //блок выпадающих меню с выбором
 
         Spinner spinnerForFromCities = (Spinner) findViewById(R.id.spinnerFrom);
-        ArrayAdapter<CharSequence> adapterFrom = ArrayAdapter.createFromResource(this, R.array.cities, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterFrom = ArrayAdapter.createFromResource(this, R.array.departure_cities, android.R.layout.simple_spinner_item);
         adapterFrom.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerForFromCities.setAdapter(adapterFrom);
         spinnerForFromCities.setSelection(0);
         spinnerForFromCities.setOnItemSelectedListener(this);
 
         Spinner spinnerToResort = (Spinner) findViewById(R.id.spinnerTo);
-        ArrayAdapter<CharSequence> adapterTo = ArrayAdapter.createFromResource(this, R.array.resort, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterTo = ArrayAdapter.createFromResource(this, R.array.arrival_countries, android.R.layout.simple_spinner_item);
         adapterTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerToResort.setAdapter(adapterTo);
         spinnerToResort.setSelection(0);
         spinnerToResort.setOnItemSelectedListener(this);
 
         Spinner spinnerNumDays = (Spinner) findViewById(R.id.spinnerOfDays);
-        ArrayAdapter<CharSequence> adapterDays = ArrayAdapter.createFromResource(this, R.array.numbers, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterDays = ArrayAdapter.createFromResource(this, R.array.duration, android.R.layout.simple_spinner_item);
         adapterTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNumDays.setAdapter(adapterDays);
         spinnerNumDays.setSelection(0);
         spinnerNumDays.setOnItemSelectedListener(this);
 
         Spinner spinnerNumP = (Spinner) findViewById(R.id.spinnerNumP);
-        ArrayAdapter<CharSequence> adapterP = ArrayAdapter.createFromResource(this, R.array.numbers, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterP = ArrayAdapter.createFromResource(this, R.array.num_adults, android.R.layout.simple_spinner_item);
         adapterTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNumP.setAdapter(adapterP);
         spinnerNumP.setSelection(0);
         spinnerNumP.setOnItemSelectedListener(this);
 
         Spinner spinnerNumPС = (Spinner) findViewById(R.id.spinnerNumPС);
-        ArrayAdapter<CharSequence> adapterPС = ArrayAdapter.createFromResource(this, R.array.numbers, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapterPС = ArrayAdapter.createFromResource(this, R.array.num_children, android.R.layout.simple_spinner_item);
         adapterTo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerNumPС.setAdapter(adapterP);
         spinnerNumPС.setSelection(0);

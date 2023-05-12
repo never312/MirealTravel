@@ -1,24 +1,44 @@
 <resources>
     <string name="app_name">MirealTravel</string>
-    <string-array name="cities">
+    <string-array name="departure_cities">
         <item>Москва</item>
-        <item>Санкт-Питербург</item>
-        <item>Калининград</item>
-        <item>Екатеринбург</item>
+        <item>Санкт-Петербург</item>
         <item>Казань</item>
+        <item>Екатеринбург</item>
+        <item>Ростов-на-Дону</item>
+        <item>Краснодар</item>
+        <item>Симферополь</item>
+        <item>Владивосток</item>
+        <item>Новосибирск</item>
+        <item>Томск</item>
+        <item>Красноярск</item>
+        <item>Иркутск</item>
+        <item>Нижний Новгород</item>
+        <item>Калининград</item>
+        <item>Сочи</item>
     </string-array>
 
-    <string-array name="resort">
+
+    <string-array name="arrival_countries">
         <item>Турция</item>
-        <item>ОАЭ</item>
-        <item>Мальдивы</item>
         <item>Египет</item>
-        <item>Кипр</item>
+        <item>Италия</item>
         <item>Испания</item>
+        <item>Греция</item>
+        <item>Франция</item>
+        <item>Черногория</item>
         <item>Тунис</item>
+        <item>Кипр</item>
+        <item>Хорватия</item>
+        <item>Мальдивы</item>
+        <item>Болгария</item>
+        <item>ОАЭ</item>
+        <item>Таиланд</item>
+        <item>Куба</item>
     </string-array>
 
-    <string-array name="numbers">
+
+    <string-array name="num_adults">
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -28,5 +48,32 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="num_children">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="duration">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
     </string-array>
 </resources>
