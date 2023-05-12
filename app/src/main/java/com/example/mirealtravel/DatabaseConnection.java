@@ -126,5 +126,64 @@ public class DatabaseConnection {
         return email;
     }
 
+    private void searchTours(String departureCity, String arrivalCountry, String departureDate, int numDays, int numAdults, int numChildren) {
+        Connection conn = null;
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = DatabaseConnection.getConnection();
+
+            // Подготовка SQL-запроса
+            String query = "SELECT * FROM Departures " +
+                    "INNER JOIN Cities ON Departures.city_id = Cities.id " +
+                    "INNER JOIN Countries ON Departures.country_id = Countries.id " +
+                    "WHERE Cities.name = ? " +
+                    "AND Countries.name = ? " +
+                    "AND Departures.departure_date = ? " +
+                    "AND Departures.duration = ? " +
+                    "AND Departures.num_adults = ? " +
+                    "AND Departures.num_children = ?";
+            stmt = conn.prepareStatement(query);
+
+            stmt.setString(1, departureCity);
+            stmt.setString(2, arrivalCountry);
+            stmt.setString(3, departureDate);
+            stmt.setInt(4, numDays);
+            stmt.setInt(5, numAdults);
+            stmt.setInt(6, numChildren);
+            
+            rs = stmt.executeQuery();
+
+            // Обработка результатов
+            while (rs.next()) {
+                // Получение данных из результатов запроса и создание объектов Tour
+                int tourId = rs.getInt("Departures.tour_id");
+                // Дополните код для получения остальных данных тура из результатов запроса
+                // и создания объектов Tour
+            }
+
+            // Здесь вы можете использовать полученные результаты для отображения данных в вашем интерфейсе
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
 
 }
